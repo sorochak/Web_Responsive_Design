@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travel Adventure Photography">
+  <!-- Key Word Meta tags for searches -->
+  <meta name="keywords" content="Travel, Adventure, Photography, Videography, Professional,
+  BC, Vancouver Island, Photographer, Artist, Outdoors">
+  <meta name="author" content="Austen Sorochak">
+  <title>Sorochak Photography</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+</head>
+  <body>
+
+    <!--------------------- Navigation Bar ----------------------->
+
+    <div class="nav">
+      <div class="logo">
+        <img src="images/sorochak.png">
+      </div>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href=#adventures>Adventures</a>
+        <a href=#aboutMe>About Me</a>
+        <a href=#signUp>Sign Up</a>
+      </div>
+    </div>
+
+      <!---------------------- Video Section ---------------------->
+      <section id="vidSection">
+          <!-- some overlay text to describe the video -->
+          <div id="sorochak">
+            <h1>Sorochak Photography</h1>
+          </div>
+
+        <div id="videoBox">
+          <video autoplay muted loop id="myVideo" class="bgvid">
+            <source src="images/background.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+      <!------------------ 3 Adventures Section ------------------->
+
+      <section id="adventures">
+        <div class="boxesContainer">
+          <div class="box">
+              <img src="images\damascus.jpg">
+              <h3>Syria</h3>
+              <p>In 2010, I traveled to Syria and walked the streets
+                of the old city of Damascus.
+                Here I found one of the largest and oldest
+                mosques in the world. The Umayyad Mosque.</p>
+          </div>
+
+          <div class="box">
+              <img src="images\iguana.jpg">
+              <h3>Ecuador</h3>
+              <p>Guayaquil is the largest city in Ecuador, and also the
+                Nation's main port.  The chicken is delicious, there's the
+                grand Metropolitan Cathedral, and the famous 'Iguana Park'!</p>
+          </div>
+
+          <div class="box">
+              <img src="images\ottawa.jpg">
+              <h3>Ottawa</h3>
+              <p>A city rich in culture with absolutely no shortage of
+                green space! Check out the nearby Gatineau Park in Quebec,
+                the Rideau Canal, and pictured above Hog's Back falls.</p>
+          </div>
+        </div>
+
+      </section
+
+      <!------------------ About Me Section ------------------->
+      <section id="aboutMe">
+        <div class="textBox">
+          <h2>About Me</h2>
+          <p>My vision to help create an enlightened
+            society. In order to acheive this I must examine my own experience
+            to find what is of value. I will strengthen the connections
+            with myself, my communities, and the earth, while sharing the
+            lessons I learn along the way with others around me.</P>
+
+          <p>My purpose in life is to see, learn, and experience as much as
+            I can. And then translate the feelings associated with these
+            experiences into creative expression. My camera is a vital tool
+            in this mission. The images I capture help me to see things
+            in a different light. Perspective is everything.</P>
+        </div>
+      </section>
+
+      <!------------------ Sign Up Section ------------------->
+      <section id="signUp" >
+        <div class="formContainer">
+
+          <video autoplay muted loop id="formVideo">
+            <source src="images/background.mp4" type="video/mp4">
+          </video>
+
+          <div class="formInner">
+            <h1>Love Adventures?</h1>
+            <h2>Sign up for our email list!</h2>
+            <form name="form" id="signUpForm" method="post">
+              <div id="inputBox">
+                <input class="input"  type="text" id="name" name="name" placeholder="FULL NAME">
+                <input class="input" type="email" id="email" name="email" placeholder="EMAIL">
+                <input class="input" id="button" type="submit" value="SIGN UP">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+  </body>
+</html>
