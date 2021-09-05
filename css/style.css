@@ -1,0 +1,447 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/******************************** NAV BAR ***********************************/
+
+.nav {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  display: block;
+  border-bottom: 1px solid #ffb2ff;
+  background-color: #202125;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  z-index: 1200;
+}
+
+.logo img {
+  position: absolute;
+  filter: invert(73%) sepia(25%) saturate(7495%) hue-rotate(231deg) brightness(102%) contrast(98%);
+  margin-top: 10px;
+  margin-left: 20px;
+  height: auto;
+  width: auto;
+  max-height: 52px;
+  max-width: 230px;
+  left: 0;
+}
+
+.menu {
+  margin: 0 30px 0 0;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  font-family: "Lucida Console", Monaco, monospace;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+.menu a:hover {
+  color: #ffb2ff;
+  text-shadow:0px 0px 30px #ffb2ff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    border: 1px solid #ffb2ff;
+    border-radius: 30px;
+    margin: 0;
+    width: 50%;
+    float: right;
+    background: rgba(0, 0, 0, .5);
+    text-shadow:0px 0px 30px #ffb2ff;
+    color: #ffb2ff;
+  }
+  #toggle:checked+.menu {
+    display: block;
+  }
+}
+
+
+/******************************  Video Section  ******************************/
+
+#vidSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid #ffb2ff;
+  text-align: center;
+}
+
+#myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+#sorochak {
+  position: absolute;
+  font-size: 8rem;
+  font-family: 'East Sea Dokdo', cursive;
+  font-weight: bold;
+  text-shadow: 1px 1px 20px #b64ec8, 0 0 25px #ffb2ff, 0 0 15px #ea80fc;
+  color: black;
+  opacity: 0.7;
+
+}
+
+/*************************  Adventures Section  *****************************/
+
+#adventures {
+  border-bottom: 1px solid #ffb2ff;
+  background-color: #202125;
+  z-index: 100;
+
+}
+
+#adventures .boxesContainer {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+
+  text-align: center;
+
+}
+
+#adventures .box {
+  position: relative;
+  top: 100px;
+  width: 24rem;
+  padding: 4%;
+  margin-top: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: grey;
+  display: inline-block;
+
+}
+
+.boxesContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#adventures .box h3 {
+  font-weight: bolder;
+  color: white;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 32%; /* Adjust this value to move the positioned div up and down */
+  font-size: 4em;
+}
+
+#adventures .box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px;
+  border-color:#ffb2ff;
+}
+
+/*************************  About Me Section  *****************************/
+
+#aboutMe {
+  position: relative;
+  border-bottom: 1px solid #ffb2ff;
+  display: block;
+  background: url('../images/sooke_1.jpg') no-repeat 0 ;
+  background-size: cover;
+  margin: 0;
+  z-index: 1100;
+}
+
+#aboutMe .textBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  color: white;
+  font-family: sans-serif;
+  padding: 0 0 80px;
+  margin: -13% 0 0 -25%;
+  background-color: hsla(120,0%,0%,0.6);
+  border: 3px black;
+  z-index: 1100;
+  display: block;
+  vertical-align: middle;
+  border-radius: 25px;
+  text-align: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#aboutMe .textBox p {
+  margin: 1.4375rem 2.5rem 0px 2.5rem;
+  line-height: 170%;
+}
+
+#aboutMe .textBox h2 {
+  margin: 2.5rem 0 0.5rem 0;
+  /*margin-top: 40px;*/
+}
+
+/*************************  Sign Up Section  *****************************/
+
+.formContainer {
+
+  position:relative;
+  display: flex;
+  height: 281px;
+  width:500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 10px solid #ffb2ff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 20px #b64ec8, 0 0 25px #ffb2ff, 0 0 15px #ea80fc;
+}
+
+#formVideo {
+  position:absolute;
+  width: 100%;
+  margin: 0 auto;
+  z-index: -100;
+  -webkit-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  object-fit: cover;
+}
+
+.formInner {
+  z-index:10;
+  margin:0 auto;
+  width:90%;
+}
+
+.formInner h1 {
+  font-size: 2.3em;
+}
+
+.formInner h1, h2 {
+  margin: 0;
+
+}
+
+#signUpForm {
+
+  padding: 10px;
+}
+
+input {
+  width:200px;
+  color: white;
+  padding: 10px;
+  margin: 20px auto;
+  margin-top: 0px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: hsla(-65,30%,31%,0.6);
+
+}
+
+#button {
+  text-transform: uppercase;
+  background-color: #202125;
+  color: grey;
+  font-family: "Lucida Console", Monaco, monospace;
+  border: 1px solid #ffb2ff;
+  width: 100px;
+}
+
+#button:hover {
+  color: #ffb2ff;
+  text-shadow:0px 0px 30px #ffb2ff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/****************************  Media Queries  ****************************/
+
+        /******************  Media Queries for iPad **************/
+
+@media only screen and (max-width: 768px) {
+
+  #sorochak {
+    font-size: 4rem;
+  }
+
+  #myVideo {
+    left: -400px;
+    bottom: -20px;
+  }
+
+  #adventures {
+    height: 195vh;
+  }
+
+  #aboutMe .textBox {
+    top: 15rem;
+    left: 8.5rem;
+    width: 66%;
+    padding: 0 0 8.125rem;
+    margin: 0;
+
+  }
+
+  #aboutMe {
+    background-position: center;
+  }
+}   /** End Media Queries for iPad **/
+
+
+/*********************  Media Queries for iPhone 6/7/8 plus *****************/
+
+
+@media only screen and (max-width: 414px) {
+
+  .logo img {
+    margin-top: 18px;
+    margin-left: 15px;
+    max-width: 140px;
+  }
+
+  #sorochak {
+    font-size: 2.3rem;
+  }
+
+  #myVideo {
+    height: 740px;
+  }
+
+      /****** iPhone  Media Queries for Adventures Section  *******/
+
+  #adventures {
+    height: 219vh;
+  }
+
+  #adventures .box {
+    top: 20px;
+    width: 19rem;
+    margin-top: 38px;
+    height: 50vh;
+  }
+
+  #adventures .box h3 {
+    top: 29%;
+  }
+
+      /****** iPhone  Media Queries for Adventures Section  *******/
+
+  #aboutMe {
+    background-size: cover;
+
+  }
+
+  #aboutMe .textBox {
+    height: 63%;
+    top: 6rem;
+    left: 2.5rem;
+    width: 80%;
+    padding: 0 0 0.125rem;
+    margin: 0;
+
+  }
+
+  #aboutMe .textBox h2 {
+    margin: 1.5rem 0 0 0;
+
+  }
+
+  #aboutMe .textBox p {
+    margin: 1.4375rem 0.5rem 0 0.5rem;
+    line-height: 160%;
+    font-size: 0.9596;
+
+  }
+
+      /****** iPhone  Media Queries for Sign Up Section  *******/
+
+  .formContainer {
+    width: 350px;
+    height: 197px;
+
+  }
+
+  .formInner h1 {
+    font-size: 1.6em;
+
+  }
+
+  .formInner h2 {
+    font-size: 1.0em;
+
+  }
+
+  .formInner h1, h2 {
+    margin: 0;
+
+  }
+
+#signUpForm {
+    padding: 0px;
+
+  }
+
+  input {
+  padding: 6px;
+  margin: 10px auto;
+
+  }
+}  /** End 414px Media Queries Section **/
